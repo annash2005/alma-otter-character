@@ -1,5 +1,4 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js';
-
 import {FBXLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js';
 import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js';
@@ -543,7 +542,13 @@ class CharacterControllerDemo {
     plane.receiveShadow = true;
     plane.rotation.x = -Math.PI / 2;
     this._scene.add(plane);
-
+    // end of mine
+//     const geometry = new THREE.BoxGeometry( 100, 100, 0.1 );
+// const material = new THREE.MeshPhongMaterial({ color: 0xe4d8c7 });
+// const cube = new THREE.Mesh( geometry, material );
+// scene.add(cube);
+//mine
+ 
     this._mixers = [];
     this._previousRAF = null;
 
@@ -630,3 +635,5 @@ let _APP = null;
 window.addEventListener('DOMContentLoaded', () => {
   _APP = new CharacterControllerDemo();
 });
+
+
